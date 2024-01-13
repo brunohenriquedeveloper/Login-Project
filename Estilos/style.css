@@ -34,10 +34,10 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
+     overflow: hidden;
     box-shadow: 0px 0px 10px black;
 
+    transform: translate(-50%, -50%);
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
 }
@@ -108,11 +108,42 @@ form > div.campo {
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 4px;
+    border-radius: 8px;
     margin: 5px 0px;
 
 }
 
 div.campo > label {
      display: none;
+}
+
+
+
+div.campo > i {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+    padding: 4px;
+}
+
+div.campo > input {
+    background-color: #49a09d;
+    color: #1e3f3e;
+    font-size: 1em;
+    width: calc(100% - 44px) ;
+    border-radius: 8px;
+    margin-bottom: 3px;
+    padding-top: 3px;
+}
+
+div.campo > input:focus-within{
+    background-color: white;
+}
+
+.material-symbols-outlined {
+    color: white;
+    margin-top: 5px;
+    margin-left: 3px;
+    size: 10px;
 }
